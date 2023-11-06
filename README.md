@@ -1,2 +1,17 @@
-# AutoReq
-AutoReq simplifies Python dependency management by automatically generating requirements.txt from your codebase, saving you time and ensuring you never miss a module.
+# AutoReq: Python Dependency Scanner
+
+AutoReq is a Python script that simplifies the process of managing Python dependencies by automatically generating a `requirements.txt` file.
+
+## Features
+- **Automated Dependency Scanning:** AutoReq scans your Python codebase to detect all imported modules.
+- **Auto-Generated `requirements.txt`:** It generates a `requirements.txt` file with the list of dependencies.
+- **Local Library Handling:** AutoReq recognizes and excludes local library modules, keeping your requirements clean.
+- **Directory or File Scanning:** You can use AutoReq to scan both directories and individual Python files.
+
+## Usage
+1. Clone or download this repository.
+2. Run the script, providing the file path or directory path you want to scan.
+3. Optionally, specify the `--output` parameter to save the imported module list to a file.
+
+```bash
+python autoreq.py path/to/your/codebase --output requirements.txt
