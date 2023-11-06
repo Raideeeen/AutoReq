@@ -13,5 +13,12 @@ AutoReq is a Python script that simplifies the process of managing Python depend
 2. Run the script, providing the file path or directory path you want to scan.
 3. Optionally, specify the `--output` parameter to save the imported module list to a file.
 
+### For Scanning Directories
 ```bash
-python autoreq.py path/to/your/codebase --output requirements.txt
+python Imports.py path/to/your/directory --output requirements.txt
+```
+
+### For Scanning Files
+```bash
+python Imports.py path/to/your/file --output requirements.txt
+```
